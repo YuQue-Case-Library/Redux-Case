@@ -14,7 +14,7 @@ export default ({ items, filterType }) => {
   } 
 
   let newItems = []
-console.log(items, filterType)
+  
   switch (filterType) {
     case 'SHOW_COMPLETED':
       newItems = items.filter(t => t.completed)
