@@ -10,7 +10,7 @@ const todos = (state = [], action) => {
         }
       ]
     case 'REMOVE_TODO':
-      if (action.id) {
+      if (action.id != null) {
         return state.filter(item => item.id !== action.id)
       }
       return []
